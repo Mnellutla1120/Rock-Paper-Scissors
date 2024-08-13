@@ -40,35 +40,35 @@ playRound(humanChoice,computerChoice){
 let i = 1;
 i++;
   while (i <= 5){
-if (humanChoice.equalsIgnoreCase("Rock") && computerChoice.equalsIgnoreCase("Paper")){
+if (humanChoice == "rock" && computerChoice == "paper"){
 console.log("You lose! Paper beats Rock.");
 compScore++;
   console.log("Computer: " + compScore);
   console.log("You: " + humanScore); 
   
 }
-  else if (humanChoice.equalsIgnoreCase("Paper") && computerChoice.equalsIgnoreCase("Scissors")){
+  else if (humanChoice == "paper" && computerChoice == "scissors"){
 console.log("You lose! Scissors beats Paper ");
 compScore++;
   }
 
-    else if (humanChoice.equalsIgnoreCase("Scissors") && computerChoice.equalsIgnoreCase("Rock")){
+    else if (humanChoice == "scissors" && computerChoice == "rock"){
 console.log("You lose! Rock beats Scissors.");
 compScore++;
   }
-    else if (humanChoice.equalsIgnoreCase("Rock") && computerChoice.equalsIgnoreCase("Scissors")){
+    else if (humanChoice == "rock" && computerChoice == "scissors"){
 console.log("You win! Rock beats Paper.");
 humanScore++;
   }
-  else if (humanChoice.equalsIgnoreCase("Paper") && computerChoice.equalsIgnoreCase("Rock")){
+  else if (humanChoice.equalsIgnoreCase == "paper" && computerChoice == "rock")){
 console.log("You win! Paper beats Rock.");
 humanScore++;
   }
-  else if (humanChoice.equalsIgnoreCase("Scissors") && computerChoice.equalsIgnoreCase("Paper")){
+  else if (humanChoice.equalsIgnoreCase == "scissors" && computerChoice == "paper")){
 console.log("You win! Scissors beats Paper.");
 humanScore++;
   }
-  else if (humanChoice.equalsIgnoreCase(computerChoice){
+  else if (humanChoice == computerChoice){
      console.log("It's a draw. No one wins.");
   }
     
@@ -87,7 +87,7 @@ humanScore++;
 
 }
 
-playRound(humanSelection, computerSelection);
+playRound(humanSelection.toLowerCase(), computerSelection);
 
 
 

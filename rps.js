@@ -4,9 +4,10 @@ let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
 
 
 //makes sure human only inputs rock, paper, or scissors 
-function getHumanChoice(humanResp.toLowerCase()){
-if (humanResp == "rock" || humanResp == "paper" || humanResp == "scissors"){
-  return humanResp;
+function getHumanChoice(humanResp){
+  let humanAns = humanResp.toLowerCase(); 
+if (humanAns == "rock" || humanAns == "paper" || humanAns == "scissors"){
+  return humanAns;
 }
 
   else {

@@ -1,9 +1,18 @@
 let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
 
 
+//makes sure human only inputs rock, paper, or scissors 
 function getHumanChoice(humanResp){
-return humanResp; 
+if (humanResp.equalsIgnoreCase("Rock") || humanResp.equalsIgnoreCase("Paper") || humanResp.equalsIgnoreCase("Scissors"))){
+  return humanResp;
 }
+
+  else {
+      return alert("HOW DARE YOU BREAK THE RULES OF ROCK-PAPER-SCISSORS"); 
+  }
+}
+
+
 
 function getComputerChoice(){
   let compAnswer = ""; 
@@ -20,5 +29,68 @@ compAnswer = "Scissors";
   return compAnswer; 
 
 }
+
+const humanSelection = getHumanChoice();
+const computerSelecion = getComputerChoice();
+let compScore = 0;
+let humanScore = 0;
+
+
+playRound(humanChoice,computerChoice){
+let i = 1;
+i++;
+  while (i <= 5){
+if (humanChoice.equalsIgnoreCase("Rock") && computerChoice.equalsIgnoreCase("Paper")){
+console.log("You lose! Paper beats Rock.");
+compScore++;
+  console.log("Computer: " + compScore);
+  console.log("You: " + humanScore); 
+  
+}
+  else if (humanChoice.equalsIgnoreCase("Paper") && computerChoice.equalsIgnoreCase("Scissors")){
+console.log("You lose! Scissors beats Paper ");
+compScore++;
+  }
+
+    else if (humanChoice.equalsIgnoreCase("Scissors") && computerChoice.equalsIgnoreCase("Rock")){
+console.log("You lose! Rock beats Scissors.");
+compScore++;
+  }
+    else if (humanChoice.equalsIgnoreCase("Rock") && computerChoice.equalsIgnoreCase("Scissors")){
+console.log("You win! Rock beats Paper.");
+humanScore++;
+  }
+  else if (humanChoice.equalsIgnoreCase("Paper") && computerChoice.equalsIgnoreCase("Rock")){
+console.log("You win! Paper beats Rock.");
+humanScore++;
+  }
+  else if (humanChoice.equalsIgnoreCase("Scissors") && computerChoice.equalsIgnoreCase("Paper")){
+console.log("You win! Scissors beats Paper.");
+humanScore++;
+  }
+  else if (humanChoice.equalsIgnoreCase(computerChoice){
+     console.log("It's a draw. No one wins.");
+  }
+    
+
+
+      console.log("Computer: " + compScore);
+  console.log("You: " + humanScore); 
+    
+  }
+  
+  
+
+
+
+
+
+}
+
+playRound(humanSelection, computerSelection);
+
+
+
+
 
 

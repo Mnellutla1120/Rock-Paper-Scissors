@@ -39,9 +39,7 @@ let humanScore = 0;
 
 
 playRound(humanChoice,computerChoice){
-let i = 1;
-i++;
-  while (i <= 5){
+
 if (humanChoice == "rock" && computerChoice == "paper"){
 console.log("You lose! Paper beats Rock.");
 compScore++;
@@ -79,13 +77,6 @@ humanScore++;
       console.log("Computer: " + compScore);
   console.log("You: " + humanScore); 
     
-  }
-  
-  
-
-
-
-
 
 }
 

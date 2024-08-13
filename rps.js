@@ -1,4 +1,4 @@
-humanAns = ''; 
+let humanAns = ''; 
 alert("Welcome to Rock Paper Scissors!"); 
 let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
 

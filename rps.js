@@ -1,9 +1,11 @@
+humanAns = ''; 
+alert("Welcome to Rock Paper Scissors!"); 
 let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
 
 
 //makes sure human only inputs rock, paper, or scissors 
-function getHumanChoice(humanResp){
-if (humanResp == "Rock" || humanResp == "paper" || humanResp == "scissors"){
+function getHumanChoice(humanResp.toLowerCase()){
+if (humanResp == "rock" || humanResp == "paper" || humanResp == "scissors"){
   return humanResp;
 }
 

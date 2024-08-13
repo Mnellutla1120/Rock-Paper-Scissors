@@ -1,11 +1,15 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+
 
 alert("Welcome to Rock Paper Scissors!"); 
 let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
-
+let humanAns = humanResp.toLowerCase();
 
 //makes sure human only inputs rock, paper, or scissors 
-function getHumanChoice(humanResp){
-  let humanAns = humanResp.toLowerCase(); 
+function getHumanChoice(humanAns){
+  
 if (humanAns == "rock" || humanAns == "paper" || humanAns == "scissors"){
   return humanAns;
 }
@@ -14,6 +18,7 @@ if (humanAns == "rock" || humanAns == "paper" || humanAns == "scissors"){
       return alert("HOW DARE YOU BREAK THE RULES OF ROCK-PAPER-SCISSORS"); 
   }
 }
+
 
 
 
@@ -39,7 +44,7 @@ let compScore = 0;
 let humanScore = 0;
 
 
-playRound(humanChoice,computerChoice){
+function playRound(humanChoice,computerChoice){
 
 if (humanChoice == "rock" && computerChoice == "paper"){
 console.log("You lose! Paper beats Rock.");
@@ -61,11 +66,11 @@ compScore++;
 console.log("You win! Rock beats Paper.");
 humanScore++;
   }
-  else if (humanChoice.equalsIgnoreCase == "paper" && computerChoice == "rock")){
+  else if (humanChoice == "paper" && computerChoice == "rock"){
 console.log("You win! Paper beats Rock.");
 humanScore++;
   }
-  else if (humanChoice.equalsIgnoreCase == "scissors" && computerChoice == "paper")){
+  else if (humanChoice == "scissors" && computerChoice == "paper"){
 console.log("You win! Scissors beats Paper.");
 humanScore++;
   }
@@ -80,7 +85,8 @@ humanScore++;
     
 
 }
-
+getHumanChoice(humanResp);
+getComputerChoice();
 playRound(humanSelection.toLowerCase(), computerSelection);
 
 

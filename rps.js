@@ -3,7 +3,7 @@ let humanResp = prompt("Rock, Paper, Scissors, Shoot!");
 
 //makes sure human only inputs rock, paper, or scissors 
 function getHumanChoice(humanResp){
-if (humanResp.equalsIgnoreCase("Rock") || humanResp.equalsIgnoreCase("Paper") || humanResp.equalsIgnoreCase("Scissors"))){
+if (humanResp == "Rock" || humanResp == "paper" || humanResp == "scissors"){
   return humanResp;
 }
 
@@ -18,13 +18,13 @@ function getComputerChoice(){
   let compAnswer = ""; 
   let choice = getRandomInt(3); 
   if (choice === 0){
-    compAnswer = "Rock";
+    compAnswer = "rock";
   }
   else if (choice === 1){
-compAnswer = "Paper";
+compAnswer = "paper";
   }
   else if (choice === 2){
-compAnswer = "Scissors";
+compAnswer = "scissors";
   }
   return compAnswer; 
 
